@@ -88,7 +88,7 @@ const Empty = styled.div`
 const InputCity = styled.input`
     border: none;
     width: 300px;
-    height: 30px;
+    height: 39px;
     ::placeholder,
         ::-webkit-input-placeholder {
             color: #124601;
@@ -105,7 +105,7 @@ const SearchButton = styled.button`
     border: none;
     background-color: white;
     border-radius: 0px 10px 10px 0px;
-    width: 30px;
+    width: 35px;
     cursor: pointer;
 `
 

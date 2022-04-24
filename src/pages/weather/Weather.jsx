@@ -21,17 +21,16 @@ function Weather() {
     const frDate = now.toLocaleDateString('fr-FR', options)
 
     useEffect(() => {
+        console.log('coordinates', coordinates)
+    }, [coordinates])
+
+    useEffect(() => {
         getLocationCoordinates(city)
     }, [city])
 
     useEffect(() => {
         getWeather(coordinates)
-
     }, [coordinates])
-
-    useEffect(() => {
-        console.log('weather', weather)
-    }, [weather])
 
     const getLocationCoordinates = async (cityName) => {
         await axios.post('http://localhost:3001', {
